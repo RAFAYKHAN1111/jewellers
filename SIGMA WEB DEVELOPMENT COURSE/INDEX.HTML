@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFAY JEWELERS</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #979027;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #290202;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Center text */
+            position: relative; /* Make container relative for absolute positioning */
+        }
+
+        .video-container {
+            position: relative; /* Position video relatively within the container */
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 for responsive layout */
+            height: 0;
+            margin-bottom: 2%;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #979027;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Additional styles */
+        h1 {
+            font-weight: bold; /* Make headings bold */
+        }
+
+        p, h2, a {
+            font-family: 'Times New Roman', Times, serif; /* Change font to Times New Roman */
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+   
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>RAFAY JEWELERS</h1>
+    </header>
+    <nav>
+        <a href="https://www.jewellers.com">Jewelry Sets</a>
+        <a href="">Rings</a>
+        <a href="#contact">Earrings</a>
+        <a href="#contact">Bracelets</a>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Our Store</h1>
+        <div class="video-container">
+            <video controls autoplay muted>
+                <source src="vecteezy_dubai-uae-2022-couple-stand-check-various-golden_16094911.MOV" type="video/mp4">
+            </video>
+        </div>
+        <section class="projects">
+            <div class="project">
+                <h2>Mix Jewellery</h2>
+                <p>Traditional and spiritual bracelets worn for cultural significance and personal adornment.</p>
+                <img src="free.jpg" alt="Necklace Set">
+            </div>
+            <div class="project">
+                <h2>Bangles</h2>
+                <p>Stylish accessories that add a touch of elegance and charm to any outfit.</p>
+                <img src="gold-desktop-celebration-jewelry.jpg" alt="Necklace">
+            </div>
+            <!-- Add more project divs here -->
+        </section>
+    </div>
+    <footer id="contact">
+        <p>Contact us at rafayjewelers@gmail.com</p>
+    </footer>
+</body>
+</html>
